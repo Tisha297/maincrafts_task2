@@ -1,0 +1,530 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f7ff;
+    color: #252238;
+}
+
+
+/* Navigation */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+
+    background: white;
+
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.navbar h2 {
+    color: #6c4cff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #6c4cff;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 500px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 40px;
+
+    padding: 70px 8%;
+
+    background: linear-gradient(
+        135deg,
+        #eeeaff,
+        #ffffff
+    );
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hello {
+    color: #6c4cff;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #6c4cff;
+}
+
+.hero-text > p:not(.hello) {
+    color: #666;
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+
+/* Button */
+
+.btn {
+    display: inline-block;
+
+    padding: 13px 24px;
+
+    background: #6c4cff;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #5038d4;
+}
+
+
+/* Hero Card */
+
+.hero-card {
+    background: white;
+
+    padding: 45px 35px;
+
+    text-align: center;
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+    min-width: 280px;
+}
+
+.emoji {
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+
+.hero-card h2 {
+    color: #6c4cff;
+    margin-bottom: 10px;
+}
+
+.hero-card p {
+    color: #777;
+}
+
+
+/* Features */
+
+.features {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.small-heading {
+    color: #6c4cff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.features h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    background: white;
+
+    width: 30%;
+
+    padding: 30px 20px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+}
+
+.icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #6c4cff;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+    line-height: 1.5;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+
+    padding: 20px;
+
+    background: #211b3d;
+
+    color: white;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+}
+
+/* ---------- ABOUT PAGE ---------- */
+
+.about {
+    min-height: 450px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 70px;
+
+    padding: 70px 10%;
+
+    background: linear-gradient(
+        135deg,
+        #eeeaff,
+        #ffffff
+    );
+}
+
+.about-icon {
+    width: 230px;
+    height: 230px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: white;
+
+    border-radius: 50%;
+
+    font-size: 90px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+
+/* Skills */
+
+.skills {
+    text-align: center;
+    padding: 70px 8%;
+}
+
+.skills h2 {
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+.skill-list {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.skill {
+    width: 30%;
+
+    background: white;
+
+    padding: 30px 20px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+}
+
+.skill span {
+    font-size: 45px;
+}
+
+.skill h3 {
+    color: #6c4cff;
+    margin: 12px 0;
+}
+
+.skill p {
+    color: #666;
+    line-height: 1.5;
+}
+
+
+/* About page mobile */
+
+@media (max-width: 768px) {
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-icon {
+        width: 180px;
+        height: 180px;
+        font-size: 70px;
+    }
+
+    .about-text h1 {
+        font-size: 32px;
+    }
+
+    .skill-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill {
+        width: 90%;
+    }
+
+}
+/* ---------- CONTACT PAGE ---------- */
+
+.contact {
+    min-height: 550px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 70px;
+
+    padding: 70px 8%;
+
+    background: linear-gradient(
+        135deg,
+        #eeeaff,
+        #ffffff
+    );
+}
+
+
+/* Contact information */
+
+.contact-info {
+    max-width: 450px;
+}
+
+.contact-info h1 {
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+.contact-info > p:not(.small-heading) {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.contact-item {
+    margin: 15px 0;
+
+    padding: 15px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.contact-item span {
+    margin-left: 10px;
+}
+
+
+/* Form */
+
+.form-box {
+    background: white;
+
+    width: 400px;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.form-box h2 {
+    margin-bottom: 25px;
+
+    color: #6c4cff;
+}
+
+form label {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #6c4cff;
+}
+
+form textarea {
+    height: 120px;
+
+    resize: none;
+}
+
+form button {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #6c4cff;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #5038d4;
+}
+
+
+/* Contact mobile */
+
+@media (max-width: 768px) {
+
+    .contact {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .contact-info {
+        max-width: 90%;
+    }
+
+    .contact-info h1 {
+        font-size: 32px;
+    }
+
+    .form-box {
+        width: 90%;
+        max-width: 400px;
+    }
+
+}
